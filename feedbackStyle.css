@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+section{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(bg.jpg);
+    /* background-size: cover;
+    background-position: center; */
+}
+section .logo{
+    margin-top: 90px;
+    margin-left: 140px;
+    /* margin: 10px auto; */
+    background-size: 0%;
+    text-align: left;
+}
+section .feedbackHeadings{
+    margin-top: 90px;
+    margin-left: 150px;  
+    text-align: left;
+    color:rgb(251, 251, 251);
+}
+body{
+    display:flex;
+    min-height: 100vh;
+    align-items:center;
+    justify-content: center;
+}
+.container{
+    width: 360px;
+    height: 520px;
+    margin-top: 50px;
+    margin-left: 450px;
+    background-color: #000;
+    box-shadow: 0 0 8px rgba(250,250,250,0.6);
+    opacity: 0.6;
+
+}
+.container form{
+    width: 100%;
+    /* margin-top: 100px;
+    margin-left: 400px; */
+    text-align: center;
+    padding: 25px 20px;
+}
+form h1{
+    padding: 10px 0;
+    color:rgb(251, 251, 251);
+}
+form .id{
+    position: relative;
+}
+.id i{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%); 
+}
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 4px 0;
+    color:rgb(251, 251, 251);
+    border: 1px solid #5c5c5c;
+    border-radius: 3px;
+    background: #181717;
+    padding: 0 15px;
+    font-size: 15px
+}
+
+form .ratings{
+    color: white;
+    margin-top: 10px;
+    margin-left: 1px;
+    /* margin-left: 30px; */
+}
+.ratings h3{
+    padding: 5px 0;
+    color:rgb(251, 251, 251);
+}
+/* div.stars.checked:hover{
+    background-color:yellow;
+    transition-duration: 0.3;
+} */
+
+.ratings .checked {
+    color: orange;
+    pointer:cursor;
+}
+form textarea{
+    padding: 5px 15px;
+    margin-top: 25px;
+    border: 1px solid #5c5c5c;
+    border-radius: 3px;
+    color:rgb(255, 255, 255);
+    background: #181717;
+    font-size: 15px;
+    width: 100%;
+}
+form button{
+    margin-top: 5px;
+    border: none;
+    background: #7dfff4;
+    color: #222;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 3px;
+}
+form input:focus,
+form textarea:focus{
+    border: 1px solid #7dfff4;
+    color: #7dfff4;
+    transition: all 0.3s ease;
+}
+form input:focus::placeholder,
+form textarea:focus::placeholder{
+    padding-left: 4px;
+    color: #7dfff4;
+    transition: all 0.3s ease;
+}
